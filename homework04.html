@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        background-color: antiquewhite;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        /* justify-content: space-between; */
+        width: 100%;
+      }
+      .pic img {
+        vertical-align: top;
+      }
+      .box {
+        width: 40px;
+        height: 40px;
+        background-color: gray;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .bar {
+        width: 34px;
+        height: 4px;
+        background-color: black;
+      }
+      .bar:nth-child(2) {
+        margin: 4px 0;
+      }
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        width: fit-content;
+      }
+      .nav li {
+        display: inline;
+        list-style: none;
+      }
+      .nav a {
+        text-decoration: none;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="pic">
+        <a href=""><img src="https://fakeimg.pl/80x40/200" /></a>
+      </div>
+
+      <div class="box">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <nav class="nav">
+        <ul class="ul">
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
